@@ -1,0 +1,43 @@
+.f-banner {
+  position: relative;
+  background-color: var(--white);
+  transform: translate(0, 1px);
+
+  background-position: center;
+  background-size: cover;
+  .f-banner__wrap {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    @media #{$sm} {
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+    }
+    .desc {
+      flex: auto;
+      * {
+        color: var(--white);
+      }
+      h4 {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 21px;
+      }
+    }
+  }
+  svg {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,39 @@
+.h-middle {
+  position: absolute;
+  width: 100%;
+  .h-middle__wrap {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 16px 0;
+    @media #{$sm} {
+      gap: 50px;
+    }
+    @media #{$xs} {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+  .h-buttons {
+    @media #{$xs} {
+      order: 4;
+      width: 100%;
+    }
+    a {
+      @media #{$xs} {
+        width: 100%;
+      }
+    }
+  }
+  .navbar__brand {
+    flex: auto;
+    a {
+      img {
+        @media #{$sm} {
+          max-width: 180px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

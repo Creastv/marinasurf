@@ -1,0 +1,59 @@
+:root {
+  --main: #fdc500;
+  --main1: #0064a8;
+  --main2: #0d1029;
+  --black: #000;
+  --light-black: #161515;
+  --body: #f8f8f8;
+  --gray: #f9f9f9;
+  --light: #fafafc;
+  --white: #fff;
+}
+
+.b-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.b-links li {
+  margin: 0;
+  padding: 0;
+}
+.b-links a.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border: 1px solid var(--black);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 460px) {
+  .b-links a.btn {
+    font-size: 12px;
+    padding: 2px 10px;
+  }
+}
+.b-links a.btn img {
+  width: 32px;
+  height: 32px;
+  padding: 3px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 100px;
+}
+.b-links a.btn:hover {
+  background-color: var(--main);
+  border: 1px solid var(--main);
+}
+.b-links a.btn:hover span {
+  color: var(--main1);
+}
+.b-links a.btn:hover img {
+  background-color: var(--white);
+}/*# sourceMappingURL=links.css.map */

@@ -1,0 +1,37 @@
+:root {
+  --main: #fdc500;
+  --main1: #0064a8;
+  --main2: #0d1029;
+  --black: #000;
+  --light-black: #161515;
+  --body: #f8f8f8;
+  --gray: #f9f9f9;
+  --light: #fafafc;
+  --white: #fff;
+}
+
+.b-container {
+  position: relative;
+}
+
+.acf-block-preview .container-narrow {
+  margin: 0 auto !important;
+}
+.acf-block-preview .b-container {
+  border: 1px solid var(--main2);
+  padding: 20px;
+  width: 100%;
+  left: initial;
+  margin-left: initial;
+  margin-top: 50px !important;
+}
+.acf-block-preview .b-container:before {
+  content: "Kontener ";
+  color: var(--white);
+  padding: 3px 10px;
+  font-size: 12px;
+  background-color: var(--main2);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}/*# sourceMappingURL=container.css.map */
