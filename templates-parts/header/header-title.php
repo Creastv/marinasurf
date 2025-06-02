@@ -47,6 +47,7 @@ if (is_category()) {
                 <?php endif; ?>
                 <?php // get_template_part('templates-parts/parts/categorys');  
                 ?>
+                <br>
             </div>
         </div>
     </header>
@@ -59,6 +60,7 @@ if (is_category()) {
                 <?php the_archive_description('<div class="entry-desc entry-desc--archive">', '</div>'); ?>
                 <?php // get_template_part('templates-parts/parts/categorys');  
                 ?>
+                <br>
             </div>
         </div>
     </header>
