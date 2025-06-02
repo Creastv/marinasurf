@@ -45,7 +45,8 @@ if (is_category()) {
                         <?php echo $customTitle['description']; ?>
                     </div>
                 <?php endif; ?>
-                <?php get_template_part('templates-parts/parts/categorys');  ?>
+                <?php // get_template_part('templates-parts/parts/categorys');  
+                ?>
             </div>
         </div>
     </header>
@@ -56,7 +57,8 @@ if (is_category()) {
                 <span class="entry-label entry-label--archive"><?php echo single_cat_title(); ?></span>
                 <h1 class="entry-title  entry-title--archive big-title "><?php echo single_cat_title(); ?></h1>
                 <?php the_archive_description('<div class="entry-desc entry-desc--archive">', '</div>'); ?>
-                <?php get_template_part('templates-parts/parts/categorys');  ?>
+                <?php // get_template_part('templates-parts/parts/categorys');  
+                ?>
             </div>
         </div>
     </header>
