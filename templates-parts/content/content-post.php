@@ -18,9 +18,9 @@
         <?php echo do_shortcode('[addtoany]'); ?>
         <div class="entry-content">
             <?php the_content(); ?>
-            <?php if (is_single()) :
-                get_template_part('templates-parts/parts/author');
-            endif; ?>
+            <!-- <?php if (is_single()) :
+                    //   get_template_part('templates-parts/parts/author');
+                    endif; ?> -->
         </div>
 
     </div>
