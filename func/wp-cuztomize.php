@@ -157,6 +157,7 @@ function register_social_media_settings($wp_customize)
         'instagram' => __('Instagram', 'go'),
         'linkedin' => __('LinkedIn', 'go'),
         'tiktok' => __('TikTok', 'go'),
+        'youtube' => __('YouTuBe', 'go'),
     ];
 
     foreach ($social_media as $key => $label) {
