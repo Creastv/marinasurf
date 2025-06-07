@@ -90,4 +90,26 @@
 }
 .b-services .swiper-slide .b-service:hover .b-service-conent h2 {
   transform: translate(0, -50px);
+}
+.b-services .swiper-nav {
+  position: absolute;
+  width: 100%;
+  max-width: 1500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.b-services .swiper-nav .swiper-button-next:after,
+.b-services .swiper-nav .swiper-button-prev:after {
+  display: none !important;
+}
+.b-services .swiper-nav .swiper-button-next svg,
+.b-services .swiper-nav .swiper-button-prev svg {
+  width: 30px;
+  height: 30px;
+}
+.b-services .swiper-nav .swiper-button-next:hover path,
+.b-services .swiper-nav .swiper-button-prev:hover path {
+  fill: var(--main1);
 }/*# sourceMappingURL=service.css.map */

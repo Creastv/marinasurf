@@ -80,4 +80,28 @@
       }
     }
   }
+  .swiper-nav {
+    position: absolute;
+    width: 100%;
+    max-width: 1500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    .swiper-button-next,
+    .swiper-button-prev {
+      &:after {
+        display: none !important;
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+      &:hover {
+        path {
+          fill: var(--main1);
+        }
+      }
+    }
+  }
 }

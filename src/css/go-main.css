@@ -666,6 +666,10 @@ iframe {
   background-color: var(--main1) !important;
   color: var(--main) !important;
 }
+.mega-menu-item:not(.mega-menu-flyout) .mega-sub-menu .mega-current_page_item > a,
+.mega-menu-item:not(.mega-menu-flyout) .mega-sub-menu .mega-current_page_item > span {
+  color: var(--main) !important;
+}
 
 .h-nav.fixed {
   background-color: var(--white);
@@ -688,8 +692,18 @@ iframe {
     color: var(--main) !important;
   }
 }
-.h-nav.fixed #mega-menu-primary_menu .mega-current_page_item a,
-.h-nav.fixed #mega-menu-primary_menu .mega-current_page_item span {
+@media only screen and (max-width: 768px) {
+  .h-nav.fixed #mega-menu-primary_menu .mega-sub-menu a,
+  .h-nav.fixed #mega-menu-primary_menu .mega-sub-menu span {
+    color: var(--black) !important;
+  }
+  .h-nav.fixed #mega-menu-primary_menu .mega-sub-menu a:hover,
+  .h-nav.fixed #mega-menu-primary_menu .mega-sub-menu span:hover {
+    color: var(--main) !important;
+  }
+}
+.h-nav.fixed #mega-menu-primary_menu .mega-current_page_item > a,
+.h-nav.fixed #mega-menu-primary_menu .mega-current_page_item > span {
   color: var(--main) !important;
 }
 .h-nav.fixed #mega-menu-primary_menu .mega-current_page_item.mega-menu-item:not(.mega-menu-flyout) li a {

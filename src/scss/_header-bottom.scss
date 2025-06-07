@@ -2,6 +2,7 @@
   position: relative;
   z-index: 999;
 }
+
 .h-nav {
   position: absolute;
   width: 100%;
@@ -108,6 +109,12 @@
         }
       }
     }
+    .mega-current_page_item {
+      > a,
+      > span {
+        color: var(--main) !important;
+      }
+    }
   }
 }
 
@@ -127,20 +134,20 @@
         }
       }
     }
-    // .mega-sub-menu {
-    //   @media #{$sm} {
-    //     a,
-    //     span {
-    //       color: var(--main1) !important;
-    //       &:hover {
-    //         color: var(--main) !important;
-    //       }
-    //     }
-    //   }
-    // }
+    .mega-sub-menu {
+      @media #{$sm} {
+        a,
+        span {
+          color: var(--black) !important;
+          &:hover {
+            color: var(--main) !important;
+          }
+        }
+      }
+    }
     .mega-current_page_item {
-      a,
-      span {
+      > a,
+      > span {
         color: var(--main) !important;
       }
     }
