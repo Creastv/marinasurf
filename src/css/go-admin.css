@@ -522,12 +522,15 @@ iframe {
 }
 #footer .f-brand-info .f-b-info .f-brand__wrap {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 50px;
 }
 #footer .f-brand-info .f-b-info .f-text {
   font-size: 14px;
   max-width: 500px;
+}
+#footer .f-brand-info .f-b-info .h-social__wrap {
+  align-self: center;
 }
 #footer .f-brand-info .f-b-info .h-social__wrap span {
   display: block;

@@ -139,7 +139,7 @@
       }
       .f-brand__wrap {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         gap: 50px;
       }
       .f-text {
@@ -152,6 +152,7 @@
         // flex-wrap: wrap;
         // align-items: center;
         // gap: 20px;
+        align-self: center;
         span {
           display: block;
           margin-bottom: 10px;

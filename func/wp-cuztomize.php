@@ -332,6 +332,18 @@ function register_footer_settings($wp_customize)
             'section' => 'footer_section',
         ])
     );
+    // 🖼️ Logo 2 w Footerze
+    $wp_customize->add_setting('footer_logo_two', [
+        'default'           => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ]);
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control($wp_customize, 'footer_logo_two', [
+            'label'   => __('Logo 2 w Footerze', 'go'),
+            'section' => 'footer_section',
+        ])
+    );
+
 
     // 📝 Tekst pod logo
     $wp_customize->add_setting('footer_text_under_logo', [
@@ -343,6 +355,7 @@ function register_footer_settings($wp_customize)
         'section' => 'footer_section',
         'type'    => 'text',
     ]);
+
 
     // 📞 Numer telefonu w Footerze
     $wp_customize->add_setting('footer_phone_number', [

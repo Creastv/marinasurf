@@ -9,6 +9,7 @@ $display_socialmedia = get_theme_mod('footer_display_socialmedia', false);
             <?php
             $footer_logo = get_theme_mod('footer_logo', '');
             $footer_text = get_theme_mod('footer_text_under_logo');
+            $footer_logo_two = get_theme_mod('footer_logo_two', '');
             ?>
             <div class="f-brand-info">
                 <div class="f-b-info">
@@ -17,6 +18,9 @@ $display_socialmedia = get_theme_mod('footer_display_socialmedia', false);
                             <a class="f-brand" href="<?php echo esc_url(home_url('/')); ?>">
                                 <img src="<?php echo esc_url($footer_logo); ?>" alt="Logo" class="footer-logo">
                             </a>
+                        <?php endif; ?>
+                        <?php if ($footer_logo_two) : ?>
+                            <img src="<?php echo esc_url($footer_logo_two); ?>" alt="Logo" class="footer-logo-two">
                         <?php endif; ?>
                         <?php if ($display_socialmedia) : ?>
                             <div class="h-social__wrap">
